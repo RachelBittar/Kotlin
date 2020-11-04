@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/aboutFragment2">
+
+    <fragment
+        android:id="@+id/aboutFragment2"
+        android:name="bittar.rachel.trivia.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/gameOverFragment2"
+        android:name="bittar.rachel.trivia.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" />
+    <fragment
+        android:id="@+id/gameWonFragment"
+        android:name="bittar.rachel.trivia.GameWonFragment"
+        android:label="fragment_game_won"
+        tools:layout="@layout/fragment_game_won" />
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="bittar.rachel.trivia.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" />
+</navigation>

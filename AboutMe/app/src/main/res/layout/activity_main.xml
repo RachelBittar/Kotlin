@@ -35,7 +35,8 @@
             android:ems="10"
             android:hint="@string/What_is_your_nickmame"
             android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:autofillHints="" />
 
         <Button
             android:id="@+id/done_button"
@@ -45,8 +46,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/layout_margin"
             android:fontFamily="@font/roboto"
-            android:text="@string/done" />
+            android:text="@string/done" /><![CDATA[
         />
+
+        ]]>
 
         <TextView
             android:id="@+id/nickname_text"
@@ -62,13 +65,16 @@
             android:id="@+id/yellow_star"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
             android:contentDescription="@string/yellow_star"
             app:srcCompat="@android:drawable/btn_star_big_on" />
 
         <ScrollView
             android:id="@+id/bio_scroll"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/padding"
+            android:paddingEnd="@dimen/padding">
 
 
             <TextView

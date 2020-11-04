@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var biding: ActivityMainBinding
-    private var myName: MyName = MyName("Rachel")
+    private var myName: MyName = MyName("Rachel Bittar")
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,12 +35,12 @@ class MainActivity : AppCompatActivity() {
 //        }
     }
 
-    @SuppressLint("ServiceCast")
+
     fun addNickName(view: View) {
 
 
     biding.apply {
-        nicknameText.text = biding.nicknameEdit.text
+        myName?.nickname=nicknameEdit.text.toString()
         invalidateAll()
         nicknameEdit.visibility = View.GONE
         doneButton.visibility = View.GONE
